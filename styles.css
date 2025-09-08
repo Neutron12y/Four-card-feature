@@ -1,0 +1,512 @@
+:root {
+    --cir-Red-200: hsl(0, 78%, 62%);
+--cir-Cyan-100: hsl(180, 62%, 55%);
+--cir-Orange-200: hsl(34, 97%, 64%);
+--cir-Blue-100: hsl(212, 86%, 64%);
+
+--cir-Grey-500: hsl(234, 12%, 34%);
+--cir-Grey-400: hsl(212, 6%, 44%);
+--cir-White-400: hsl(0, 0%, 100%);
+
+
+--fw-normal:200;
+--fw-regular:400;
+--fw-bold:600;
+
+} 
+
+
+
+*::before,
+*::after {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+body {
+min-height: 100vh;
+font-size: 12px;
+display: grid;
+grid-template-columns: 1fr;
+align-items: center;
+    justify-items: center;
+     background-color:rgb(250, 248, 248);
+}
+
+.container {
+    width: 1200px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+   
+}
+
+.grid {
+    display: flex;
+ align-content: center;
+ place-content: center;
+  
+    column-gap: 2rem;
+ text-align: justify;
+}
+
+.grid-column-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    
+    row-gap: 2rem;
+    margin-bottom: 6rem;
+    
+}
+
+.grid .team-supervisor:nth-child(1) {
+   margin-top:9.3rem;
+}
+
+.grid .calculator:nth-child(3) {
+    margin-top:9.3rem;
+}
+.head {
+    display: grid;
+    grid-template-columns: 1fr;
+       align-items: center;
+    justify-items: center;
+    width: 400px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.team-supervisor {
+       padding-left: .1rem;
+      padding-right: 2.7rem;
+      padding-bottom: 2.3rem;
+      padding-top: 1rem;
+    background-color: var(--cir-White-400);
+height: 170px;
+width: 270px;
+display: grid;
+    grid-template-columns: 1fr;
+       align-items:  center;
+    justify-items: center;
+    border-top: .3rem solid hsl(180, 62%, 55%);
+    border-top-left-radius:.5rem;
+     border-top-right-radius:.5rem;
+     border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  box-shadow: 8px 3px 8px 2px rgba(100, 94, 94, 0.1);
+
+}
+
+.team-builder {
+    padding-left: .1rem;
+      padding-right: 4.8rem;
+      padding-bottom: 2.3rem;
+      padding-top: 1rem;
+ background-color: var(--cir-White-400);
+height: 170px;
+width: 235px;
+text-wrap: wrap;
+display: grid;
+    grid-template-columns: 1fr;
+       align-items:  center;
+    justify-items: center;
+     border-top: .3rem solid hsl(0, 78%, 62%);
+     border-top-left-radius:.5rem;
+     border-top-right-radius:.5rem;
+     border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+   box-shadow: 8px 3px 8px 2px rgba(100, 94, 94, 0.1);
+}
+
+.karma {
+       padding-left: .1rem;
+      padding-right: 2.7rem;
+      padding-bottom: 2.3rem;
+      padding-top: 1rem;
+ background-color: var(--cir-White-400);
+height: 170px;
+width: 267px;
+text-wrap: wrap;
+display: grid;
+    grid-template-columns: 1fr;
+       align-items:  center;
+    justify-items: center;
+     border-top: .3rem solid  hsl(34, 97%, 64%);
+     border-top-left-radius:.5rem;
+     border-top-right-radius:.5rem;
+     border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+   box-shadow: 8px 3px 8px 2px rgba(100, 94, 94, 0.1);
+}
+
+
+.calculator {
+    padding-left: .1rem;
+      padding-right: 2.7rem;
+      padding-bottom: 2.3rem;
+      padding-top: 1rem;
+ background-color: var(--cir-White-400);
+height: 170px;
+width: 270px;
+text-wrap: wrap;
+display: grid;
+    grid-template-columns: 1fr;
+       align-items: center;
+    justify-items: center;
+     border-top: .3rem solid  hsl(212, 86%, 64%) ;
+     border-top-left-radius:.5rem;
+     border-top-right-radius:.5rem;
+     border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+   box-shadow: 8px 3px 8px 2px rgba(100, 94, 94, 0.1);
+}
+
+
+.team-supervisor .frame-one {
+    position: relative;
+     display: inline-block;
+    top:40px;
+    left: 8rem;
+    bottom: 0;
+    transform: translate(-5%, -50%);
+}
+
+
+.frame-two {
+    position: relative;
+    display: inline-block;
+    top:40px;
+    left: 10.5rem;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+.frame-three {
+    position: relative;
+     display: inline-block;
+    top:40px;
+    left: 9.7rem;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+.frame-four {
+    position: relative;
+     display: inline-block;
+    top:40px;
+    left: 9.7rem;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+
+h1 {
+    font-size: 28px;
+    font-weight: var(--fw-bold);
+    color: var(--cir-Grey-400);
+    margin-bottom: -.5rem;
+}
+
+h2 {
+     font-size: 30px;
+     font-weight: var(--fw-bold);
+     color: rgba(34, 32, 32, 0.8);
+}
+
+h3 {
+    margin-right: 6.9rem;
+    font-size: 20px;
+      color: rgba(34, 32, 32, 0.8);
+}
+
+.head p {
+    margin-top: .5rem;
+}
+
+.calculator h3 {
+    margin-left:.1rem;
+}
+
+.calculator p {
+    margin-left:.1rem;
+}
+
+.team-builder h3 {
+    margin-left:28.5px;
+    text-wrap: nowrap;
+}
+
+.team-supervisor h3 {
+    margin-right: 7rem;
+    
+}
+
+.team-supervisor p {
+    margin-right: 1.5rem;
+    
+    
+}
+
+.karma p  {
+    margin-left: .5rem;
+   
+}
+
+.karma h3 {
+    margin-right: 8.8rem;
+    
+}
+
+
+p {
+     font-weight: var(--fw-bold);
+    color: var(--cir-Grey-400);
+    line-height: 1rem;
+}
+
+
+
+/*Media Query */
+@media (max-width:2122px) {
+    
+
+    .head p {
+   text-align: center;
+   width: 405px;
+  line-height:1.3;
+  font-size:14px;
+  display: block;
+}
+
+}
+
+
+
+@media (max-width:1366px) {
+    .container {
+       margin-left: -2.5rem;
+    
+    
+    }
+    .head p {
+   text-align: center;
+   width: 405px;
+  line-height:1.3;
+  font-size:14px;
+  display: block;
+}
+
+}
+
+@media (max-width:1180px) {
+     body {
+        margin-top:2rem;
+    }
+
+    .container {
+        margin-left:-.8rem;
+        
+    }
+
+}
+
+@media (max-width:1024px) {
+    .container {
+        margin-left:-1rem;
+        
+    }
+
+    .head p {
+   text-align: center;
+   width: 405px;
+  line-height:1.3;
+  font-size:14px;
+  display: block;
+
+}
+}
+
+
+
+@media (max-width:768px){
+
+     body {
+        margin-top:2rem;
+    }
+
+    .grid {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr;
+        row-gap:2rem;
+    }
+
+
+
+.grid .calculator:nth-child(3)  {
+display: grid;
+grid-template-columns:1fr;
+grid-template-rows:1fr;
+   
+    margin-bottom:10rem;
+    margin-top:-6rem;
+}
+
+
+.container {
+    width: 360px;
+    height: 1000px;
+}
+
+.head p {
+   text-align: center;
+   width: 360px;
+  line-height:1.3;
+  font-size:20.5px;
+display: block;
+}
+
+}
+
+@media (max-width:540px) {
+     body {
+        margin-top:2rem;
+    }
+
+    .container {
+        margin-left:-1.5rem;
+        
+    }
+
+}
+
+@media (max-width:430px) {
+     body {
+        margin-top:2rem;
+    }
+
+    .container {
+        margin-left:-1rem;
+        
+    }
+
+    .head p {
+   text-align: center;
+   width: 360px;
+  line-height:1.3;
+  font-size:19.5px;
+display: block;
+}
+
+}
+
+@media (max-width:414px) {
+     body {
+        margin-top:3rem;
+    }
+
+    .container {
+        margin-left:-1.3rem;
+        
+    }
+
+    .head p {
+   text-align: center;
+   width: 360px;
+  line-height:1.3;
+  font-size:19.5px;
+display: block;
+}
+
+
+}
+
+@media (max-width:412px) {
+
+     body {
+        margin-top:2rem;
+    }
+
+
+.container {
+    margin-right:.1rem;
+}
+
+    .head p {
+   text-align: center;
+   width: 360px;
+  line-height:1.3;
+  font-size:19.5px;
+display: block;
+}
+
+
+}
+
+@media (max-width:390px) {
+   
+    body {
+        margin-top:3rem;
+    }
+
+
+    .container {
+        margin-left:-2.9rem;
+    
+        
+    }
+}
+
+@media (max-width:375px) {
+   
+    body {
+        margin-top:3rem;
+    }
+
+
+    .container {
+        margin-left:-1.2rem;
+    
+        
+    }
+
+    .head p {
+   text-align: center;
+   width: 360px;
+  line-height:1.3;
+  font-size:19.5px;
+display: block;
+padding-left: .5rem;
+padding-right: .5rem;
+}
+}
+
+@media (max-width:344px) {
+   
+    body {
+        margin-top:3rem;
+    }
+
+
+    .container {
+        margin-left:-1.8rem;
+    
+        
+    }
+
+    .head p {
+   text-align: center;
+   width: 360px;
+  line-height:1.3;
+  font-size:19.5px;
+display: block;
+padding-left: .5rem;
+padding-right: .5rem;
+}
+}
